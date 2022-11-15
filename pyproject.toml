@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61", "setuptools.scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# name it as your package name
+name = "drf-casbin"
+# semetric versions
+version = "0.1.0-alpha.1"
+# describe the package within one sentence
+description = "Django REST Framework Adapter for Casbin."
+authors = [{ name = "QuantTide Inc.", email = "opensource@quanttide.com" }]
+license = { text = "BSD" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+requires-python = '>=3'
+dependencies = [
+    'django',
+    'djangorestframework',
+    'casbin',
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[tool.setuptools]
+packages = ["drf_casbin"]
